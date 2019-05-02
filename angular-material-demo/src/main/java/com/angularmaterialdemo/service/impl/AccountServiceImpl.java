@@ -31,7 +31,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public Account findByOwnerId(Long ownerId) {
+	public List<Account> findByOwnerId(Long ownerId) {
 		return accountRepository.findByOwnerId(ownerId);
 	}
 

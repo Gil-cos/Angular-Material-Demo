@@ -15,7 +15,7 @@ public interface AccountService {
 	
 	void delete(Long id);
 	
-	Account findByOwnerId(Long ownerId);
+	List<Account> findByOwnerId(Long ownerId);
 	
 	List<Account> findAll();
 	
